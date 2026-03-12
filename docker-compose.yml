@@ -1,0 +1,7 @@
+services:
+  audit_logging_app:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - 8001:8000
