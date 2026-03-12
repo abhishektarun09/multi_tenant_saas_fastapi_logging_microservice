@@ -1,0 +1,5 @@
+services:
+  audit_logging_app:
+    build: .
+    env_file:
+      - .env
