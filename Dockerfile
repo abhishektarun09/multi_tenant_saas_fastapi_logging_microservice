@@ -16,4 +16,4 @@ RUN uv sync --frozen --no-cache
 # Copy project
 COPY . .
 
-CMD ["uv", "run", "python", "-m", "app.main"]
+CMD uv run uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}
